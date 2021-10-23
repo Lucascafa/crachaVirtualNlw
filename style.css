@@ -1,0 +1,91 @@
+/* Cascating Stylesheet - Folha de estilo em cascata */
+/* O elemento que entra por último é o que tem mais força, o que vai ser visualizado primeiro */
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+
+  background: url(images/796863.jpg);
+  background-size: cover;
+}
+
+main {
+  background: url(images/mobile.jpg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+/* Usa o . quando vamos nos referir a uma classe */
+.container {
+  max-width: 250px; /*Largura máxima*/
+  margin-left: auto; /*Margem esquerda*/
+  margin-right: auto; /*Margem direita*/
+  text-align: center;
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem; /*1 rem = 16 px*/
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: var(--grey);
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: var(--grey);
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+  list-style: none; /* Pra tirar as bolinhas da lista */
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}

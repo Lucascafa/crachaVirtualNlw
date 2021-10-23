@@ -1,0 +1,80 @@
+<!--
+  HTML - HyperText - Hiper texto - é um texto com links
+         Markup - Tags - marcação
+         Language - Regras de uma Linguagem
+-->
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Cafarelli - DoWhile 2021</title>
+    <!-- CSS começando a partir daqui-->
+    <!--O h1 abaixo é o seletor onde estou mostrando o que quero mudar, dentro das chaves precisa da propriedade e do valor-->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!--div cria uma caixa, um container para armazenar informações-->
+        <div class="avatar">
+          <span>
+            <img src="images/selo.svg" alt="Selo Rocketseat" />
+          </span>
+          <img
+            id="userImage"
+            src="https://lorempixel.com/185/185/people/"
+            alt="Imagem do Lucas"
+            width=""
+            height=""
+          />
+        </div>
+        <h1 id="userName">Mayk Brito</h1>
+        <!-- h1 cabeçalho grande, maior número-->
+        <!-- a - serve para colocar hiperlink / Para abrir o hyperlink em uma nova aba, antes de fechar colocar target="_blank"-->
+        <a id="userGithub" href="https://github.com/maykbrito" target="_blank"
+          ><img src="images/github.svg" alt="Logo do Github" /><span
+            id="userLogin"
+            >Mayk Brito</span
+          >
+        </a>
+
+        <p id="userBio">
+          Um novato prospecto da tecnologia, cada dia aprendendo mais e me
+          aprimorando mais e amando mais essa área.
+        </p>
+
+        <ul id="socialLinks">
+          <!--Significa lista não ordenada e cada elemento está na tag li-->
+          <li class="instagram">
+            <!--Lista dos itens de um elemento HTML/ para representar um item que faz parte de uma lista-->
+            <a href="https://instagram.com/maykbrito" target="_blank">
+              <img src="images/instagram.png" alt="Logo do Instagram" />
+            </a>
+          </li>
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/in/maykbrito/" target="_blank"
+              ><img src="images/linkedin1.png" alt="Logo do LinkedIn"
+            /></a>
+          </li>
+          <li class="facebook">
+            <a href="https://www.facebook.com/maykbrito/" target="_blank">
+              <img src="images/facebook.png" alt="Logo do Facebook" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
